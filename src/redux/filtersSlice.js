@@ -1,9 +1,9 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const filtersSlice = createSlice({
-    name: 'filters',           // ← Ödevde istenen isim bu
+    name: 'filters',
     initialState: {
-        name: "",                // ← Ödevde istenen alan bu
+        name: "",
     },
     reducers: {
         changeFilter: (state, action) => {

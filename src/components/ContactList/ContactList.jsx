@@ -1,14 +1,14 @@
 import { useSelector } from 'react-redux';
 import { selectContacts } from '../../redux/contactsSlice';
-import { selectNameFilter } from '../../redux/filtersSlice';   // ← Burası düzeltildi!
-import Contact from '../Contact/Contact';   // ← Yolunu da düzelttim (Contact aynı klasörde)
+import { selectNameFilter } from '../../redux/filtersSlice';
+import Contact from '../Contact/Contact';
 import css from './ContactList.module.css'
 
 const ContactList = () => {
     const contacts = useSelector(selectContacts);
-    const filter = useSelector(selectNameFilter);   // ← selectNameFilter kullanıyoruz
+    const filter = useSelector(selectNameFilter);
 
-    // Filtreye göre listeyi filtrele
+    // Filter contacts based on the search query
     const filteredContacts = contacts.filter((contact) =>
         contact.name.toLowerCase().includes(filter.toLowerCase())
     );

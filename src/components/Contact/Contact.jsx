@@ -7,7 +7,7 @@ const Contact = ({ id, name, number }) => {
     const dispatch = useDispatch();
 
     const handleDelete = () => {
-        dispatch(deleteContact(id));   // Redux'a silme eylemini gönderiyoruz
+        dispatch(deleteContact(id));
     };
 
     return (

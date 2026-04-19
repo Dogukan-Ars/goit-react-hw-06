@@ -15,14 +15,15 @@ const ContactForm = () => {
         if (!name || !number) return;
 
         const newContact = {
-            id: Date.now().toString(),   // basit id (ödev için yeterli)
+            id: Date.now().toString(),
             name,
             number,
         };
 
-        dispatch(addContact(newContact));   // Redux'a ekliyoruz
+        // Add contact to Redux store
+        dispatch(addContact(newContact));
 
-        // Formu temizle
+        // Clear form fields
         setName('');
         setNumber('');
     };
@@ -46,7 +47,7 @@ const ContactForm = () => {
                 required
             />
             <button type="submit" className={css.formButton}>
-                Ekle
+                Add Contact
             </button>
         </form >
     );
