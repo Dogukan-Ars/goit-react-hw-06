@@ -15,10 +15,10 @@ const ContactList = () => {
 
     return (
         <div className={css.contactListContainer}>
-            <h2 className={css.contactListTitle}>İletişim Listesi</h2>
+            <h2 className={css.contactListTitle}>Contact List</h2>
 
             {filteredContacts.length === 0 ? (
-                <p>Henüz kişi eklenmedi veya arama sonucu boş.</p>
+                <p>No contacts found or search result is empty.</p>
             ) : (
                 <ul className={css.contactList}>
                     {filteredContacts.map((contact) => (

@@ -11,7 +11,7 @@ function App() {
 
   return (
     <div className="app">
-      <h1>📱 İletişim Kitabı</h1>
+      <h1>📱 Contact Book</h1>
 
       <ContactForm />
       <SearchBox />

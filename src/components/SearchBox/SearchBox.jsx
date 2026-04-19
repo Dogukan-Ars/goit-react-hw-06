@@ -13,11 +13,11 @@ const SearchBox = () => {
 
     return (
         <div className={css.searchBoxContainer}>
-            <h3 className={css.searchBoxTitle}>Arama Yap</h3>
+            <h3 className={css.searchBoxTitle}>Search Contacts</h3>
             <input
                 className={css.searchBoxInput}
                 type="text"
-                placeholder="İsim ara..."
+                placeholder="Search by name..."
                 value={filter}
                 onChange={handleChange}
             />
