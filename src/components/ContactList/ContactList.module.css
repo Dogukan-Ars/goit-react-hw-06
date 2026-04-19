@@ -1,0 +1,19 @@
+.contactListContainer {
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.contactListTitle {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.contactList {
+    list-style: none;
+    padding: 0;
+}
+
+.contactListItem {
+    margin-bottom: 10px;
+}

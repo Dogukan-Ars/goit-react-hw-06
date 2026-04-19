@@ -1,0 +1,21 @@
+.searchBoxContainer {
+    margin-bottom: 20px;
+}
+
+.searchBoxTitle {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.searchBoxInput {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 48%;
+}
+
+.searchBoxInput:focus {
+    outline: none;
+    border-color: #333;
+}
